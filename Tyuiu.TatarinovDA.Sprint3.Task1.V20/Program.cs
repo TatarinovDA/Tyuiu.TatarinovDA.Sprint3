@@ -1,8 +1,8 @@
-﻿using Tyuiu.TatarinovDA.Sprint3.Task1.V20.Lib;
+﻿using Tyuiu.TatarinovDA.Sprint3.Task0.V20.Lib;
 //
 //
 
-namespace Tyuiu.TatarinovDA.Sprint3.Task1.V20
+namespace Tyuiu.TatarinovDA.Sprint3.Task0.V20
 {
     class Program
     {
@@ -14,7 +14,7 @@ namespace Tyuiu.TatarinovDA.Sprint3.Task1.V20
             Console.WriteLine("***************************************************************************");
             Console.WriteLine("* Спринт #3                                                               *");
             Console.WriteLine("* Тема: Оператор цикла for                                                *");
-            Console.WriteLine("* Задание #1                                                              *");
+            Console.WriteLine("* Задание #0                                                              *");
             Console.WriteLine("* Вариант #20                                                             *");
             Console.WriteLine("* Выполнил: Татаринов Данил Андреевич | ИСТНб-26-1                        *");
             Console.WriteLine("***************************************************************************");
@@ -26,11 +26,11 @@ namespace Tyuiu.TatarinovDA.Sprint3.Task1.V20
             Console.WriteLine("***************************************************************************");
             Console.WriteLine("* ИСХОДНЫЕ ДАННЫЕ:                                                        *");
             Console.WriteLine("***************************************************************************");
-
+            int value = 1;
             int startValue = 1;
             int stopValue = 14;
             Console.WriteLine($"* Начало цикла k: {startValue}");
-            Console.WriteLine($"*Значение X: 1 (задано по условию)");
+            Console.WriteLine($"*Значение X: {value} (задано по условию)");
 
 
 
@@ -40,7 +40,7 @@ namespace Tyuiu.TatarinovDA.Sprint3.Task1.V20
             Console.WriteLine("***************************************************************************");
 
 
-            Console.WriteLine($"Произведение ряда P = {ds.GetSumSeries(startValue, stopValue):F4}");
+            Console.WriteLine($"Произведение ряда P = {ds.GetMultiplySeries(startValue, stopValue, value):F4}");
             
 
 
