@@ -12,7 +12,7 @@ namespace Tyuiu.TatarinovDA.Sprint3.Task0.V20.Lib
                 double term = Math.Cos(value) + Math.Pow(k / 8.0, 3);
                 p *= term;
             }
-            return p;
+            return Math.Round(p,2);
         }
     }
 }
