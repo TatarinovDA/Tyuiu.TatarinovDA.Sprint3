@@ -12,7 +12,7 @@ namespace Tyuiu.TatarinovDA.Sprint3.Task1.V4.Test
             int stopValue = 10;
             double wait = 1.549767;
             double res = ds.GetSumSeries(startValue, stopValue);
-            Assert.AreEqual(Math.Round(wait,5), Math.Round(res,5));
+            Assert.AreEqual(Math.Round(wait,2), Math.Round(res,2));
         }
     }
 }

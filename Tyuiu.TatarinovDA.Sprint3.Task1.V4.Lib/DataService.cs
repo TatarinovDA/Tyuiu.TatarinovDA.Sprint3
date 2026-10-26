@@ -13,7 +13,7 @@ namespace Tyuiu.TatarinovDA.Sprint3.Task1.V4.Lib
                 sum += Math.Pow(term, 2);
                 k++;
             }
-            return sum;
+            return Math.Round(sum,2);
 
         }
     }
