@@ -6,7 +6,7 @@ namespace Tyuiu.TatarinovDA.Sprint3.Task0.V20.Lib
         public double GetMultiplySeries(int value, int startValue, int stopValue)
         {
             double p = 1;
-            
+
             for (int k = startValue; k <= stopValue; k++)
             {
                 double term = Math.Cos(value) + Math.Pow(k / 8.0, 3);

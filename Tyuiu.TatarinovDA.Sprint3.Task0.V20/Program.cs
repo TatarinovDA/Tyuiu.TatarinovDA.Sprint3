@@ -34,14 +34,14 @@ namespace Tyuiu.TatarinovDA.Sprint3.Task0.V20
 
 
 
-            
+
             Console.WriteLine("***************************************************************************");
             Console.WriteLine("* РЕЗУЛЬТАТ:                                                              *");
             Console.WriteLine("***************************************************************************");
 
 
-            Console.WriteLine($"Произведение ряда P = {ds.GetMultiplySeries(startValue, stopValue, value):F4}");
-            
+            Console.WriteLine($"Произведение ряда P = {ds.GetMultiplySeries(value, startValue, stopValue):F4}");
+
 
 
             Console.WriteLine("***************************************************************************");
