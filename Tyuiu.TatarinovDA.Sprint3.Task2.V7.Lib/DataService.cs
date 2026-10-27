@@ -14,7 +14,7 @@ namespace Tyuiu.TatarinovDA.Sprint3.Task2.V7.Lib
                 k++;
             }
             while (k <= stopValue);
-            return sum;
+            return Math.Round(sum,3);
             
 
         }
