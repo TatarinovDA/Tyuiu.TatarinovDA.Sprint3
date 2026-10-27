@@ -13,7 +13,7 @@ namespace Tyuiu.TatarinovDA.Sprint3.Task3.V3.Lib
 
             int minCount = int.MaxValue;
             int currentCount = 0;
-            bool foundItem = false;
+            
 
             
             foreach (char c in value)
@@ -21,14 +21,14 @@ namespace Tyuiu.TatarinovDA.Sprint3.Task3.V3.Lib
                 if (c == item)
                 {
                     currentCount++;
-                    foundItem = true;
+                    
                 }
                 else
                 {
                     
                     if (currentCount > 0)
                     {
-                        if (currentCount < minCount)
+                        if (currentCount >= 2 && currentCount < minCount)
                         {
                             minCount = currentCount;
                         }
@@ -38,16 +38,15 @@ namespace Tyuiu.TatarinovDA.Sprint3.Task3.V3.Lib
             }
 
             
-            if (currentCount > 0)
+            if (currentCount >= 2 && currentCount < minCount)
             {
-                if (currentCount < minCount)
-                {
+                
                     minCount = currentCount;
-                }
+                
             }
 
             
-            return foundItem ? minCount : 0;
+            return minCount == int.MaxValue ? 0 : minCount;
         }
     }
 }

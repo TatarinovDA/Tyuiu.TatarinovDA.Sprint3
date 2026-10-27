@@ -13,7 +13,7 @@ namespace Tyuiu.TatarinovDA.Sprint3.Task3.V3.Test
                 char item = 'f';
                 int actual = ds.GetMinCharCount(value, item);
 
-            Assert.AreEqual(1, actual);
+            Assert.AreEqual(2, actual);
         
         }
     }
