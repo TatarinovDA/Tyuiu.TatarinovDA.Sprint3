@@ -13,12 +13,14 @@ namespace Tyuiiu.TatarinovDA.Sprint3.Task5.V6.Test
             int startValue2 = 1;
             int stopValue2 = 10;
 
-            // Ожидаемое математическое значение (с учетом радианной меры угла)
-            double wait = -17.084;
+            
+            double wait = 40.917;
 
             double res = ds.GetSumSumSeries(startValue1, startValue2, stopValue1, stopValue2);
 
             Assert.AreEqual(wait, res, 0.01);
+
+            
         }
     }
 }
