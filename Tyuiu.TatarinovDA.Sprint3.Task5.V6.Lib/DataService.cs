@@ -16,7 +16,7 @@ namespace Tyuiu.TatarinovDA.Sprint3.Task5.V6.Lib
             }
 
 
-            return sum;
+            return Math.Round(sum, 3);
         }
     }
 }
